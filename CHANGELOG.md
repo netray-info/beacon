@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-05-01
+
+### Security
+- Bump rustls-webpki to 0.103.13 (RUSTSEC-2026-{0098,0099,0104})
+- Bump frontend toolchain (vite ^6→^8, vitest ^2→^4) for esbuild dev-server advisory (GHSA-67mh-4wv8-2f99)
+
+### Fixed
+- Add NODE_AUTH_TOKEN line to frontend/.npmrc (was missing vs. sibling tools)
+- Drop unused `SpfFlat` import in cross_validation tests
+
+### Changed
+- Bump @netray-info/common-frontend to ^0.5.2 (also resolves a pre-existing TS error in App.tsx where SuiteNav lacked the "email" key)
+- Bump netray-common to 0.8.1
+
 ## [0.1.0] - 2026-04-11
 
 Initial release of beacon, the email security inspector for netray.info.
