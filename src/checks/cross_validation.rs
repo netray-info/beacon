@@ -260,7 +260,7 @@ fn check_fcrdns_mismatch(r: &AllResults) -> Option<SubCheck> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::quality::{MtaStsInfo, SpfFlat};
+    use crate::quality::MtaStsInfo;
 
     fn empty_result(cat: Category) -> CheckResult {
         CheckResult::new(cat, Vec::new(), String::new())
