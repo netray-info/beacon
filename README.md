@@ -1,3 +1,5 @@
+> **Archived.** This repository moved into the netray monorepo, [`netray-info/netray`](https://github.com/netray-info/netray/tree/main/crates/beacon). Development, issues and releases happen there. This repository publishes nothing further to GHCR images; images and versions already published stay available.
+
 # beacon
 
 DNS-only email security inspector for the [netray.info](https://netray.info) suite. Given a domain, beacon checks 12 email security categories (MX, SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE, DNSSEC, BIMI, FCrDNS, DNSBL, cross-validation) and streams results incrementally via SSE, computing an aggregate grade A–F.
